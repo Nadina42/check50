@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <math.h>
+
+int main(void)
+{
+    float f;
+    int s;
+    do 
+    {
+        printf("O hai! How much change is owed? "); 
+        /* введіть потрібне число*/
+        f = GetFloat();
+    }
+    while (f < 0); 
+    /* 1. Умножаем на сто. 2. Раундим. 3. Приводим к инту(синтаксис приведения: a = (int) b; )*/
+    f = f*100, round(f);
+    f = (int) s;
+    s = GetInt();
+}
+   
+int main() 
+    { float q=0.25; float d=0.10; float n=0.5; float p=0.1; int coins=0; float money = GetFloat();
+while(money>=q)
+{
+    money=money-q;
+    coins=coins+1;
+}
+while(money>=d)
+{
+    money=money-d;
+    coins=coins+1;
+}
+while(money>=n)
+{
+    money=money-n;
+    coins=coins+1;
+}
+while(money>=p)
+{
+    money=money-p;
+    coins=coins+1;
+}
+
+printf("%i\n",coins);
+} printf 
+}
+
+/*printf("%.2d\n", s); */    
+    
+/* */
