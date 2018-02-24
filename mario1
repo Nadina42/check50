@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{ 
+   int s;
+   do 
+   {
+        printf("height: "); 
+        /* Запит на висоту піраміди */
+        s = get_int();
+   }
+  while (s > 23 && s < 0);
+  for (int i = 0; i < s; i++)
+  {
+      for (int ii = s - 1 - i; ii >= 0; ii--) 
+      {
+         printf (" ");
+      }
+         for (int iii = 0; iii <= i + 1; iii++)
+         {
+           printf ("#");  
+         }
+      printf ("  ");
+         for (int iii = 0; iii <= i + 1; iii++)
+      {
+          printf ("#");
+      }
+      printf("\n");  
+  } 
+}
